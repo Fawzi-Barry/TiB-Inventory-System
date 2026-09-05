@@ -50,6 +50,8 @@ MONGODB_URI=mongodb://127.0.0.1:27017/IMS
 
 The credentials file is ignored by Git. MongoDB Atlas users can replace the local connection string with their Atlas URI.
 
+For the Vercel backend, add `MONGODB_URI` and `JWT_SECRET` in the Vercel project settings for the Production environment. The MongoDB Atlas network access list must also allow connections from Vercel.
+
 ### 3. Start the backend
 
 In one terminal:
