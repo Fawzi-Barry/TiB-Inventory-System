@@ -47,7 +47,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .stats-strip p { font-size: 15px; justify-self: end; line-height: 1.4; margin: 0; max-width: 300px; }
 .section-wrap { margin: auto; max-width: 1176px; padding: 110px 32px; }
 .inventory-page, .form-page { margin: auto; max-width: 1176px; padding: 85px 32px 110px; }
-.page-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 38px; }
+.page-heading { align-items: flex-end; display: flex; justify-content: space-between; margin-bottom: 38px; }
 .page-heading h1, .form-page h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(38px, 5vw, 64px); font-weight: 500; letter-spacing: -2px; line-height: 1; margin: 0; }
 .page-heading p { color: var(--muted); margin: 10px 0 0; }
 .inventory-card { background: var(--paper); border-top: 3px solid var(--forest); overflow: auto; }
@@ -104,7 +104,7 @@ em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; }
 .illustration-label { color: var(--coral); font-family: 'Space Grotesk', sans-serif; font-size: 52px; font-weight: 600; line-height: .8; position: relative; text-align: center; transform: rotate(-8deg); }
 .illustration-label small { color: white; font-family: 'DM Sans', sans-serif; font-size: 9px; letter-spacing: 2px; }
 .dashboard-content { margin: auto; max-width: 1176px; padding: 72px 32px 100px; }
-.dashboard-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 30px; }
+.dashboard-heading { align-items: flex-end; display: flex; justify-content: space-between; margin-bottom: 30px; }
 .dashboard-heading .eyebrow { margin-bottom: 12px; }
 .dashboard-heading h2 { font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 500; letter-spacing: -1.5px; margin: 0; }
 .dashboard-grid { display: grid; gap: 18px; grid-template-columns: 1.2fr 1fr 1fr; }
