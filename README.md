@@ -81,7 +81,11 @@ cd Frontend
 npm run build
 ```
 
-The frontend currently calls the API at `http://localhost:3001`. For production hosting, update `Frontend/src/api.js` to use the deployed backend URL before building.
+The frontend uses `REACT_APP_API_URL` when it is available. In local development it defaults to `http://localhost:3001`; production builds default to `https://tib-ims-backend.vercel.app`. To use another backend, set the variable before building:
+
+```bash
+REACT_APP_API_URL=https://your-backend.example.com npm run build
+```
 
 ## License
 

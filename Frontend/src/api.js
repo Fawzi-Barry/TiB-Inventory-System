@@ -1,4 +1,8 @@
-const API_URL = "http://localhost:3001";
+const API_URL =
+  process.env.REACT_APP_API_URL ||
+  (process.env.NODE_ENV === "production"
+    ? "https://tib-ims-backend.vercel.app"
+    : "http://localhost:3001");
 
 export async function apiRequest(path, options = {}) {
   const token = localStorage.getItem("tib_token");

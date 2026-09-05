@@ -14,6 +14,10 @@ app.use(express.json());
 app.use("/auth", authRouter);
 app.use(router);
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Inventory API listening on port ${port}`);
+  });
+}
+
+module.exports = app;
