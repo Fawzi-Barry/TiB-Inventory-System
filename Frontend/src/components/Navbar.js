@@ -12,9 +12,9 @@ export default function Navbar(props) {
           <span>{props.title}</span>
         </NavLink>
         <div className="nav-links">
-          <NavLink to="/">Dashboard</NavLink>
-          <NavLink to="/products">Inventory</NavLink>
-          <NavLink to="/profile">Profile</NavLink>
+          <NavLink className="nav-dashboard" to="/">Dashboard</NavLink>
+          <NavLink className="nav-inventory" to="/products">Inventory</NavLink>
+          <NavLink className="nav-profile" to="/profile">Profile</NavLink>
           <NavLink className="nav-cta" to="/insertproduct">
             Add resource <span>+</span>
           </NavLink>
